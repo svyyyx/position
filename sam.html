@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>prikolI</title>
+
+	<style type="text/css">
+		.mom {
+			width: 1922px;
+			height: 960px;
+			background-color: cyan;
+			margin: -10px;
+
+		}
+
+		.box1 {
+			width: 150px;
+			height: 150px;
+			background: red;
+			position: absolute;
+			left: 5%;
+			top: 0px;
+			border-radius: 50%;
+			
+		}
+
+		.box2 {
+			width: 150px;
+			height: 150px;
+			background: blue;
+			position: absolute;
+			left: 30%;
+			top: 0px;
+			border-radius: 50%;
+			
+		}
+
+		.box3 {
+			width: 150px;
+			height: 150px;
+			background: green;
+			position: absolute;
+			left: 60%;
+			top: 0px;
+			border-radius: 50%;
+			
+		}
+
+		.box4 {
+			width: 150px;
+			height: 150px;
+			background: orange;
+			position: absolute;
+			left: 85%;
+			top: 0px;
+			border-radius:50% ;
+			
+		}
+
+		.box5 {
+			width: 150px;
+			height: 150px;
+			background: purple;
+			position: absolute;
+			left: 45.58%;
+			top: 370px;
+			opacity: 0.001;
+
+			
+		}
+
+		.fort {
+   			color:#4b535d;
+   			transition: 0.5s;
+   			font-family: cursive;
+   		}
+   		.fort:hover {
+   			color: #FF6400;
+   		}
+
+   		.box1-1 {
+
+   		}
+
+			/*.box2 {
+			width: 0;
+		    height: 0;
+		    border-right: 200px solid transparent;
+		    border-top: 200px solid #ffde00;
+		    border-left: -200px solid #ffde00;
+		 
+		    
+			left: 700px;
+			position:absolute;
+			
+		}*/
+
+			/*.box4 {
+			height: 200px;
+			width: 200px;
+			position: absolute;
+			left: 0px;
+			top: 210px;
+			border: 100px solid transparent;
+			border-left: 100px solid green; 
+			border-top: 100px solid green; 
+
+			
+		}*/
+	</style>
+</head>
+<body>
+	<div style="margin-top: 500px;position: absolute;">
+		<h2 class="fort box1-1">Красный - движение</h2>
+		<h2 class="fort box2-1">Синий - движение</h2>
+		<h2 class="fort box3-1">Зеленый - движение</h2>
+		<h2 class="fort box4-1">Оранжевый - исходное</h2>
+	</div>
+	<div class="mom">
+		
+		
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="box5"></div>
+	</div>
+
+	<script type="text/javascript">
+		document.querySelector(".box1").onclick = function(){
+			
+			document.querySelector(".box1").style.left = "750px";
+			document.querySelector(".box1").style.top = "250px";
+			document.querySelector(".box4").style.left = "750px";
+			document.querySelector(".box4").style.top = "450px";
+			document.querySelector(".box2").style.left = "950px";
+			document.querySelector(".box2").style.top = "250px";
+			document.querySelector(".box3").style.left = "950px";
+			document.querySelector(".box3").style.top = "450px";
+
+			document.querySelector(".box3").style.height = "0px";
+			document.querySelector(".box3").style.width = "0px";
+			document.querySelector(".box3").style.borderRight = "200px solid transparent";
+			document.querySelector(".box3").style.borderTop = "200px solid green";
+			document.querySelector(".box3").style.borderLeft = "-200px solid green";
+			document.querySelector(".box3").style.borderRadius = "0px";
+			document.querySelector(".box3").style.background = "none";
+
+			document.querySelector(".box2").style.height = "0px";
+			document.querySelector(".box2").style.width = "0px";
+			document.querySelector(".box2").style.borderRight = "200px solid transparent";
+			document.querySelector(".box2").style.borderTop = "200px solid blue";
+			document.querySelector(".box2").style.borderLeft = "-200px solid blue";
+			document.querySelector(".box2").style.borderRadius = "0px";
+			document.querySelector(".box2").style.background = "none";
+
+			document.querySelector(".box1").style.height = "0px";
+			document.querySelector(".box1").style.width = "0px";
+			document.querySelector(".box1").style.borderRight = "200px solid transparent";
+			document.querySelector(".box1").style.borderTop = "200px solid red";
+			document.querySelector(".box1").style.borderLeft = "-200px solid red";
+			document.querySelector(".box1").style.borderRadius = "0px";
+			document.querySelector(".box1").style.background = "none";
+
+			document.querySelector(".box4").style.height = "0px";
+			document.querySelector(".box4").style.width = "0px";
+			document.querySelector(".box4").style.borderRight = "200px solid transparent";
+			document.querySelector(".box4").style.borderTop = "200px solid orange";
+			document.querySelector(".box4").style.borderLeft = "-200px solid orange";
+			document.querySelector(".box4").style.borderRadius = "0px";
+			document.querySelector(".box4").style.background = "none";
+			document.querySelector(".mom").style.background = "lightseagreen";
+			
+
+			document.querySelector(".box5").style.opacity = "1";
+
+			document.querySelector(".box1").style.transform = "rotate(0deg)";
+			document.querySelector(".box2").style.transform = "rotate(90deg)";
+			document.querySelector(".box3").style.transform = "rotate(180deg)";
+			document.querySelector(".box4").style.transform = "rotate(270deg)";
+			document.querySelector(".box5").style.transform = "rotate(225deg)";
+
+
+			
+			document.querySelector(".box1").style.transition = "3s";
+			document.querySelector(".box2").style.transition = "3s";
+			document.querySelector(".box3").style.transition = "3s";
+			document.querySelector(".box4").style.transition = "3s";
+			document.querySelector(".box5").style.transition = "2s";
+			document.querySelector(".mom").style.transition = "3s";
+		}
+
+
+
+		document.querySelector(".box2").onclick = function(){
+			
+			document.querySelector(".box1").style.left = "950px";
+			document.querySelector(".box1").style.top = "450px";
+			document.querySelector(".box4").style.left = "950px";
+			document.querySelector(".box4").style.top = "250px";
+			document.querySelector(".box2").style.left = "750px";
+			document.querySelector(".box2").style.top = "450px";
+			document.querySelector(".box3").style.left = "750px";
+			document.querySelector(".box3").style.top = "250px";
+
+			document.querySelector(".box3").style.height = "0px";
+			document.querySelector(".box3").style.width = "0px";
+			document.querySelector(".box3").style.borderRight = "200px solid transparent";
+			document.querySelector(".box3").style.borderTop = "200px solid green";
+			document.querySelector(".box3").style.borderLeft = "-200px solid green";
+			document.querySelector(".box3").style.borderRadius = "0px";
+			document.querySelector(".box3").style.background = "none";
+
+			document.querySelector(".box2").style.height = "0px";
+			document.querySelector(".box2").style.width = "0px";
+			document.querySelector(".box2").style.borderRight = "200px solid transparent";
+			document.querySelector(".box2").style.borderTop = "200px solid blue";
+			document.querySelector(".box2").style.borderLeft = "-200px solid blue";
+			document.querySelector(".box2").style.borderRadius = "0px";
+			document.querySelector(".box2").style.background = "none";
+			document.querySelector(".mom").style.background = "#0b007d";
+			
+
+			document.querySelector(".box1").style.height = "0px";
+			document.querySelector(".box1").style.width = "0px";
+			document.querySelector(".box1").style.borderRight = "200px solid transparent";
+			document.querySelector(".box1").style.borderTop = "200px solid red";
+			document.querySelector(".box1").style.borderLeft = "-200px solid red";
+			document.querySelector(".box1").style.borderRadius = "0px";
+			document.querySelector(".box1").style.background = "none";
+
+			document.querySelector(".box4").style.height = "0px";
+			document.querySelector(".box4").style.width = "0px";
+			document.querySelector(".box4").style.borderRight = "200px solid transparent";
+			document.querySelector(".box4").style.borderTop = "200px solid orange";
+			document.querySelector(".box4").style.borderLeft = "-200px solid orange";
+			document.querySelector(".box4").style.borderRadius = "0px";
+			document.querySelector(".box4").style.background = "none";
+
+			document.querySelector(".box1").style.transform = "rotate(360deg)";
+			document.querySelector(".box2").style.transform = "rotate(450deg)";
+			document.querySelector(".box3").style.transform = "rotate(540deg)";
+			document.querySelector(".box4").style.transform = "rotate(630deg)";
+			document.querySelector(".box5").style.transform = "rotate(-225deg)";
+
+			document.querySelector(".box5").style.opacity = "0";
+
+			
+			document.querySelector(".box1").style.transition = "3s";
+			document.querySelector(".box2").style.transition = "3s";
+			document.querySelector(".box3").style.transition = "3s";
+			document.querySelector(".box4").style.transition = "3s";
+			document.querySelector(".box5").style.transition = "2s";
+			document.querySelector(".mom").style.transition = "3s";
+		}
+
+		document.querySelector(".box3").onclick = function(){
+			
+			document.querySelector(".box1").style.left = "850px";
+			document.querySelector(".box1").style.top = "200px";
+			document.querySelector(".box4").style.left = "1050px";
+			document.querySelector(".box4").style.top = "350px";
+			document.querySelector(".box2").style.left = "700px";
+			document.querySelector(".box2").style.top = "350px";
+			document.querySelector(".box3").style.left = "850px";
+			document.querySelector(".box3").style.top = "450px";
+
+			document.querySelector(".box3").style.height = "0px";
+			document.querySelector(".box3").style.width = "0px";
+			document.querySelector(".box3").style.borderRight = "250px solid transparent";
+			document.querySelector(".box3").style.borderTop = "250px solid green";
+			document.querySelector(".box3").style.borderLeft = "-250px solid green";
+			document.querySelector(".box3").style.borderRadius = "0px";
+			document.querySelector(".box3").style.background = "none";
+
+			document.querySelector(".box2").style.height = "0px";
+			document.querySelector(".box2").style.width = "0px";
+			document.querySelector(".box2").style.borderRight = "200px solid transparent";
+			document.querySelector(".box2").style.borderTop = "200px solid blue";
+			document.querySelector(".box2").style.borderLeft = "-200px solid blue";
+			document.querySelector(".box2").style.borderRadius = "0px";
+			document.querySelector(".box2").style.background = "none";
+
+			document.querySelector(".box1").style.height = "0px";
+			document.querySelector(".box1").style.width = "0px";
+			document.querySelector(".box1").style.borderRight = "250px solid transparent";
+			document.querySelector(".box1").style.borderTop = "250px solid red";
+			document.querySelector(".box1").style.borderLeft = "-250px solid red";
+			document.querySelector(".box1").style.borderRadius = "0px";
+			document.querySelector(".box1").style.background = "none";
+
+			document.querySelector(".box4").style.height = "0px";
+			document.querySelector(".box4").style.width = "0px";
+			document.querySelector(".box4").style.borderRight = "200px solid transparent";
+			document.querySelector(".box4").style.borderTop = "200px solid orange";
+			document.querySelector(".box4").style.borderLeft = "-200px solid orange";
+			document.querySelector(".box4").style.borderRadius = "0px";
+			document.querySelector(".box4").style.background = "none";
+			document.querySelector(".mom").style.background = "#3b3b8a";
+
+			document.querySelector(".box1").style.transform = "rotate(45deg)";
+			document.querySelector(".box2").style.transform = "rotate(45deg)";
+			document.querySelector(".box3").style.transform = "rotate(-135deg)";
+			document.querySelector(".box4").style.transform = "rotate(225deg)";
+			document.querySelector(".box5").style.transform = "rotate(-225deg)";
+
+			document.querySelector(".box5").style.opacity = "0";
+
+			
+			document.querySelector(".box1").style.transition = "3s";
+			document.querySelector(".box2").style.transition = "3s";
+			document.querySelector(".box3").style.transition = "3s";
+			document.querySelector(".box4").style.transition = "3s";
+			document.querySelector(".box5").style.transition = "2s";
+		}	
+
+		document.querySelector(".box4").onclick = function(){
+			
+			document.querySelector(".box1").style.left = "5%";
+			document.querySelector(".box1").style.top = "0px";
+			document.querySelector(".box4").style.left = "85%";
+			document.querySelector(".box4").style.top = "0px";
+			document.querySelector(".box2").style.left = "30%";
+			document.querySelector(".box2").style.top = "0px";
+			document.querySelector(".box3").style.left = "60%";
+			document.querySelector(".box3").style.top = "0px";
+
+			document.querySelector(".box3").style.height = "150px";
+			document.querySelector(".box3").style.width = "150px";
+			document.querySelector(".box3").style.borderRight = "none";
+			document.querySelector(".box3").style.borderTop = "none";
+			document.querySelector(".box3").style.borderLeft = "none";
+			document.querySelector(".box3").style.borderRadius = "50%";
+			document.querySelector(".box3").style.background = "green";
+
+			document.querySelector(".box2").style.height = "150px";
+			document.querySelector(".box2").style.width = "150px";
+			document.querySelector(".box2").style.borderRight = "none";
+			document.querySelector(".box2").style.borderTop = "none";
+			document.querySelector(".box2").style.borderLeft = "none";
+			document.querySelector(".box2").style.borderRadius = "50%";
+			document.querySelector(".box2").style.background = "blue";
+
+			document.querySelector(".box1").style.height = "150px";
+			document.querySelector(".box1").style.width = "150px";
+			document.querySelector(".box1").style.borderRight = "none";
+			document.querySelector(".box1").style.borderTop = "none";
+			document.querySelector(".box1").style.borderLeft = "none";
+			document.querySelector(".box1").style.borderRadius = "50%";
+			document.querySelector(".box1").style.background = "red";
+
+			document.querySelector(".box4").style.height = "150px";
+			document.querySelector(".box4").style.width = "150px";
+			document.querySelector(".box4").style.borderRight = "none";
+			document.querySelector(".box4").style.borderTop = "none";
+			document.querySelector(".box4").style.borderLeft = "none";
+			document.querySelector(".box4").style.borderRadius = "50%";
+			document.querySelector(".box4").style.background = "orange";
+			document.querySelector(".mom").style.background = "cyan";
+
+
+			document.querySelector(".box1").style.transform = "rotate(-45deg)";
+			document.querySelector(".box2").style.transform = "rotate(-45deg)";
+			document.querySelector(".box3").style.transform = "rotate(135deg)";
+			document.querySelector(".box4").style.transform = "rotate(-225deg)";
+			document.querySelector(".box5").style.transform = "rotate(-225deg)";
+
+			document.querySelector(".box5").style.opacity = "0";
+
+			
+			document.querySelector(".box1").style.transition = "3s";
+			document.querySelector(".box2").style.transition = "3s";
+			document.querySelector(".box3").style.transition = "3s";
+			document.querySelector(".box4").style.transition = "3s";
+			document.querySelector(".box5").style.transition = "2s";
+		}	
+
+		document.querySelector(".box1-1").onclick = function(){
+			
+			document.querySelector(".box1").style.left = "750px";
+			document.querySelector(".box1").style.top = "250px";
+			document.querySelector(".box4").style.left = "750px";
+			document.querySelector(".box4").style.top = "450px";
+			document.querySelector(".box2").style.left = "950px";
+			document.querySelector(".box2").style.top = "250px";
+			document.querySelector(".box3").style.left = "950px";
+			document.querySelector(".box3").style.top = "450px";
+
+			document.querySelector(".box3").style.height = "0px";
+			document.querySelector(".box3").style.width = "0px";
+			document.querySelector(".box3").style.borderRight = "200px solid transparent";
+			document.querySelector(".box3").style.borderTop = "200px solid green";
+			document.querySelector(".box3").style.borderLeft = "-200px solid green";
+			document.querySelector(".box3").style.borderRadius = "0px";
+			document.querySelector(".box3").style.background = "none";
+
+			document.querySelector(".box2").style.height = "0px";
+			document.querySelector(".box2").style.width = "0px";
+			document.querySelector(".box2").style.borderRight = "200px solid transparent";
+			document.querySelector(".box2").style.borderTop = "200px solid blue";
+			document.querySelector(".box2").style.borderLeft = "-200px solid blue";
+			document.querySelector(".box2").style.borderRadius = "0px";
+			document.querySelector(".box2").style.background = "none";
+
+			document.querySelector(".box1").style.height = "0px";
+			document.querySelector(".box1").style.width = "0px";
+			document.querySelector(".box1").style.borderRight = "200px solid transparent";
+			document.querySelector(".box1").style.borderTop = "200px solid red";
+			document.querySelector(".box1").style.borderLeft = "-200px solid red";
+			document.querySelector(".box1").style.borderRadius = "0px";
+			document.querySelector(".box1").style.background = "none";
+
+			document.querySelector(".box4").style.height = "0px";
+			document.querySelector(".box4").style.width = "0px";
+			document.querySelector(".box4").style.borderRight = "200px solid transparent";
+			document.querySelector(".box4").style.borderTop = "200px solid orange";
+			document.querySelector(".box4").style.borderLeft = "-200px solid orange";
+			document.querySelector(".box4").style.borderRadius = "0px";
+			document.querySelector(".box4").style.background = "none";
+			document.querySelector(".mom").style.background = "lightseagreen";
+			
+
+			document.querySelector(".box5").style.opacity = "1";
+
+			document.querySelector(".box1").style.transform = "rotate(0deg)";
+			document.querySelector(".box2").style.transform = "rotate(90deg)";
+			document.querySelector(".box3").style.transform = "rotate(180deg)";
+			document.querySelector(".box4").style.transform = "rotate(270deg)";
+			document.querySelector(".box5").style.transform = "rotate(225deg)";
+
+
+			
+			document.querySelector(".box1").style.transition = "3s";
+			document.querySelector(".box2").style.transition = "3s";
+			document.querySelector(".box3").style.transition = "3s";
+			document.querySelector(".box4").style.transition = "3s";
+			document.querySelector(".box5").style.transition = "2s";
+			document.querySelector(".mom").style.transition = "3s";
+		}
+
+
+
+		document.querySelector(".box2-1").onclick = function(){
+			
+			document.querySelector(".box1").style.left = "950px";
+			document.querySelector(".box1").style.top = "450px";
+			document.querySelector(".box4").style.left = "950px";
+			document.querySelector(".box4").style.top = "250px";
+			document.querySelector(".box2").style.left = "750px";
+			document.querySelector(".box2").style.top = "450px";
+			document.querySelector(".box3").style.left = "750px";
+			document.querySelector(".box3").style.top = "250px";
+
+			document.querySelector(".box3").style.height = "0px";
+			document.querySelector(".box3").style.width = "0px";
+			document.querySelector(".box3").style.borderRight = "200px solid transparent";
+			document.querySelector(".box3").style.borderTop = "200px solid green";
+			document.querySelector(".box3").style.borderLeft = "-200px solid green";
+			document.querySelector(".box3").style.borderRadius = "0px";
+			document.querySelector(".box3").style.background = "none";
+
+			document.querySelector(".box2").style.height = "0px";
+			document.querySelector(".box2").style.width = "0px";
+			document.querySelector(".box2").style.borderRight = "200px solid transparent";
+			document.querySelector(".box2").style.borderTop = "200px solid blue";
+			document.querySelector(".box2").style.borderLeft = "-200px solid blue";
+			document.querySelector(".box2").style.borderRadius = "0px";
+			document.querySelector(".box2").style.background = "none";
+			document.querySelector(".mom").style.background = "#0b007d";
+			
+
+			document.querySelector(".box1").style.height = "0px";
+			document.querySelector(".box1").style.width = "0px";
+			document.querySelector(".box1").style.borderRight = "200px solid transparent";
+			document.querySelector(".box1").style.borderTop = "200px solid red";
+			document.querySelector(".box1").style.borderLeft = "-200px solid red";
+			document.querySelector(".box1").style.borderRadius = "0px";
+			document.querySelector(".box1").style.background = "none";
+
+			document.querySelector(".box4").style.height = "0px";
+			document.querySelector(".box4").style.width = "0px";
+			document.querySelector(".box4").style.borderRight = "200px solid transparent";
+			document.querySelector(".box4").style.borderTop = "200px solid orange";
+			document.querySelector(".box4").style.borderLeft = "-200px solid orange";
+			document.querySelector(".box4").style.borderRadius = "0px";
+			document.querySelector(".box4").style.background = "none";
+
+			document.querySelector(".box1").style.transform = "rotate(360deg)";
+			document.querySelector(".box2").style.transform = "rotate(450deg)";
+			document.querySelector(".box3").style.transform = "rotate(540deg)";
+			document.querySelector(".box4").style.transform = "rotate(630deg)";
+			document.querySelector(".box5").style.transform = "rotate(-225deg)";
+
+			document.querySelector(".box5").style.opacity = "0";
+
+			
+			document.querySelector(".box1").style.transition = "3s";
+			document.querySelector(".box2").style.transition = "3s";
+			document.querySelector(".box3").style.transition = "3s";
+			document.querySelector(".box4").style.transition = "3s";
+			document.querySelector(".box5").style.transition = "2s";
+			document.querySelector(".mom").style.transition = "3s";
+		}
+
+		document.querySelector(".box3-1").onclick = function(){
+			
+			document.querySelector(".box1").style.left = "850px";
+			document.querySelector(".box1").style.top = "200px";
+			document.querySelector(".box4").style.left = "1050px";
+			document.querySelector(".box4").style.top = "350px";
+			document.querySelector(".box2").style.left = "700px";
+			document.querySelector(".box2").style.top = "350px";
+			document.querySelector(".box3").style.left = "850px";
+			document.querySelector(".box3").style.top = "450px";
+
+			document.querySelector(".box3").style.height = "0px";
+			document.querySelector(".box3").style.width = "0px";
+			document.querySelector(".box3").style.borderRight = "250px solid transparent";
+			document.querySelector(".box3").style.borderTop = "250px solid green";
+			document.querySelector(".box3").style.borderLeft = "-250px solid green";
+			document.querySelector(".box3").style.borderRadius = "0px";
+			document.querySelector(".box3").style.background = "none";
+
+			document.querySelector(".box2").style.height = "0px";
+			document.querySelector(".box2").style.width = "0px";
+			document.querySelector(".box2").style.borderRight = "200px solid transparent";
+			document.querySelector(".box2").style.borderTop = "200px solid blue";
+			document.querySelector(".box2").style.borderLeft = "-200px solid blue";
+			document.querySelector(".box2").style.borderRadius = "0px";
+			document.querySelector(".box2").style.background = "none";
+
+			document.querySelector(".box1").style.height = "0px";
+			document.querySelector(".box1").style.width = "0px";
+			document.querySelector(".box1").style.borderRight = "250px solid transparent";
+			document.querySelector(".box1").style.borderTop = "250px solid red";
+			document.querySelector(".box1").style.borderLeft = "-250px solid red";
+			document.querySelector(".box1").style.borderRadius = "0px";
+			document.querySelector(".box1").style.background = "none";
+
+			document.querySelector(".box4").style.height = "0px";
+			document.querySelector(".box4").style.width = "0px";
+			document.querySelector(".box4").style.borderRight = "200px solid transparent";
+			document.querySelector(".box4").style.borderTop = "200px solid orange";
+			document.querySelector(".box4").style.borderLeft = "-200px solid orange";
+			document.querySelector(".box4").style.borderRadius = "0px";
+			document.querySelector(".box4").style.background = "none";
+			document.querySelector(".mom").style.background = "#3b3b8a";
+
+			document.querySelector(".box1").style.transform = "rotate(45deg)";
+			document.querySelector(".box2").style.transform = "rotate(45deg)";
+			document.querySelector(".box3").style.transform = "rotate(-135deg)";
+			document.querySelector(".box4").style.transform = "rotate(225deg)";
+			document.querySelector(".box5").style.transform = "rotate(-225deg)";
+
+			document.querySelector(".box5").style.opacity = "0";
+
+			
+			document.querySelector(".box1").style.transition = "3s";
+			document.querySelector(".box2").style.transition = "3s";
+			document.querySelector(".box3").style.transition = "3s";
+			document.querySelector(".box4").style.transition = "3s";
+			document.querySelector(".box5").style.transition = "2s";
+		}	
+
+		document.querySelector(".box4-1").onclick = function(){
+			
+			document.querySelector(".box1").style.left = "5%";
+			document.querySelector(".box1").style.top = "0px";
+			document.querySelector(".box4").style.left = "85%";
+			document.querySelector(".box4").style.top = "0px";
+			document.querySelector(".box2").style.left = "30%";
+			document.querySelector(".box2").style.top = "0px";
+			document.querySelector(".box3").style.left = "60%";
+			document.querySelector(".box3").style.top = "0px";
+
+			document.querySelector(".box3").style.height = "150px";
+			document.querySelector(".box3").style.width = "150px";
+			document.querySelector(".box3").style.borderRight = "none";
+			document.querySelector(".box3").style.borderTop = "none";
+			document.querySelector(".box3").style.borderLeft = "none";
+			document.querySelector(".box3").style.borderRadius = "50%";
+			document.querySelector(".box3").style.background = "green";
+
+			document.querySelector(".box2").style.height = "150px";
+			document.querySelector(".box2").style.width = "150px";
+			document.querySelector(".box2").style.borderRight = "none";
+			document.querySelector(".box2").style.borderTop = "none";
+			document.querySelector(".box2").style.borderLeft = "none";
+			document.querySelector(".box2").style.borderRadius = "50%";
+			document.querySelector(".box2").style.background = "blue";
+
+			document.querySelector(".box1").style.height = "150px";
+			document.querySelector(".box1").style.width = "150px";
+			document.querySelector(".box1").style.borderRight = "none";
+			document.querySelector(".box1").style.borderTop = "none";
+			document.querySelector(".box1").style.borderLeft = "none";
+			document.querySelector(".box1").style.borderRadius = "50%";
+			document.querySelector(".box1").style.background = "red";
+
+			document.querySelector(".box4").style.height = "150px";
+			document.querySelector(".box4").style.width = "150px";
+			document.querySelector(".box4").style.borderRight = "none";
+			document.querySelector(".box4").style.borderTop = "none";
+			document.querySelector(".box4").style.borderLeft = "none";
+			document.querySelector(".box4").style.borderRadius = "50%";
+			document.querySelector(".box4").style.background = "orange";
+			document.querySelector(".mom").style.background = "cyan";
+
+
+			document.querySelector(".box1").style.transform = "rotate(-45deg)";
+			document.querySelector(".box2").style.transform = "rotate(-45deg)";
+			document.querySelector(".box3").style.transform = "rotate(135deg)";
+			document.querySelector(".box4").style.transform = "rotate(-225deg)";
+			document.querySelector(".box5").style.transform = "rotate(-225deg)";
+
+			document.querySelector(".box5").style.opacity = "0";
+
+			
+			document.querySelector(".box1").style.transition = "3s";
+			document.querySelector(".box2").style.transition = "3s";
+			document.querySelector(".box3").style.transition = "3s";
+			document.querySelector(".box4").style.transition = "3s";
+			document.querySelector(".box5").style.transition = "2s";
+		}	
+
+
+				
+	</script>
+
+</body>
+</html>
